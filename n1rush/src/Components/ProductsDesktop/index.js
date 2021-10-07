@@ -3,7 +3,7 @@ import { Container } from "./style";
 import OutridersBanner from "../../assets/svgs/outriders.svg";
 import DonkeyKongBanner from "../../assets/svgs/donkey.svg";
 import CyberpunkBanner from "../../assets/svgs/cyberpunk.svg";
-import Product from "../ControlProducts";
+import ControlProducts from "../ControlProducts";
 
 const Products = ({setTotal, total}) => {
   const products = [
@@ -29,7 +29,7 @@ const Products = ({setTotal, total}) => {
       <ul>
         {products.map((product, index) => (
           <li key={index}> 
-              <Product  product={product} setTotal={setTotal} total={total} />
+              <ControlProducts  product={product} setTotal={setTotal} total={total} />
           </li>
         ))}
       </ul>

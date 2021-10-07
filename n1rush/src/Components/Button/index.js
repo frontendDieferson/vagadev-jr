@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { PurchaseButton } from "./style";
 import Mario from "../../assets/svgs/mario.svg";
 
-const Button = ({ idProduct, products, pageProduct, bagTotal, setOpen, setBagTotal }) => {
+const Button = ({ idProduct, products, pageProduct, total, setOpen, setTotal }) => {
   const [state, setState] = useState({
     label: "Comprar",
     disabled: false,
@@ -21,7 +21,7 @@ const Button = ({ idProduct, products, pageProduct, bagTotal, setOpen, setBagTot
           disabled: true,
         });
         setOpen(true);
-        setBagTotal(bagTotal + 1);
+        setTotal(total + 1);
       }}
     >
       <p>{state.label}</p>

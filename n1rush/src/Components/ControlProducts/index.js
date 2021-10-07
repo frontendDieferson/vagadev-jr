@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Container, Image, Info, Line } from "./style";
-import Button from "../../Button";
-import Modal from "../../Modal";
+import Button from "../Button";
+import Modal from "../Modal";
 
-const ControlProducts = ({ pageProduct, product, setBagTotal,bagTotal }) => {
+const ControlProducts = ({ pageProduct, product, setTotal,total }) => {
   const [open, setOpen] = useState(false);   
   
   return (
@@ -16,7 +16,7 @@ const ControlProducts = ({ pageProduct, product, setBagTotal,bagTotal }) => {
         <Info>
           <small> {product.title} </small>
           <h6> {`R$ ${product.price}`} </h6>
-          <Button  idProduct={product.id} pageProduct={pageProduct} setOpen={setOpen} setBagTotal={setBagTotal} bagTotal={bagTotal}/>
+          <Button  idProduct={product.id} pageProduct={pageProduct} setOpen={setOpen} setTotal={setTotal} total={total}/>
         </Info>
       </Container>
       <Modal open={open} setOpen={setOpen} />

@@ -1,5 +1,5 @@
 import React from "react";
-import CloseButton from "../../assets/svgs/close_btn.svg";
+
 import Mario from "../../assets/svgs/mario.svg";
 import { Container, Info, Box } from "./style";
 

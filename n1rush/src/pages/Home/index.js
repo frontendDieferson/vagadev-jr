@@ -1,12 +1,14 @@
-import Carousel from "../../components/carousel";
-import MediumBanners from "../../components/mediumBanners";
-import TopBar from "../../components/topBar";
-import HighlightIcon from "../../assets/svgs/highlight-icon.svg";
-import { Title, Products, App } from "./style";
-import Footer from "../../components/footer";
 import React, {useState} from "react";
-import ProductListDesktop from "../../components/productList";
-import ProductListMobile from "../../components/productListMobile";
+import { Title, Products, App } from "./style";
+
+import HighlightIcon from "../../assets/svgs/highlight-icon.svg";
+import ProductsDesktop from "../../Components/ProductsDesktop";
+import ProductsMobile from "../../components/productsMobile";
+
+import Carousel from "../../Components/Carousel";
+import Banners from "../../Components/Banners";
+import TopBar from "../../Components/TopBar";
+import Footer from "../../Components/footer";
 
 
 const Home = () => {
@@ -18,14 +20,14 @@ const Home = () => {
     <App>
       <Carousel />
       <TopBar total={total}/>
-      <MediumBanners />
+      <Banners />
       <Products>
         <Title>
           <img src={HighlightIcon} alt="icon" />
           <h2> Produtos em destaque </h2>
         </Title>
-        <ProductListDesktop setTotal={setTotal} bagTotal={bagTotal}/>
-        <ProductListMobile setTotal={setTotal} bagTotal={bagTotal}/>
+        <ProductsDesktop setTotal={setTotal} total={total}/>
+        <ProductsMobile setTotal={setTotal} total={total}/>
       </Products>     
       <Footer/> 
     </App>

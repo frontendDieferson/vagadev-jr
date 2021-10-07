@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container, Left, Right} from './style';
-import  Icon  from "../../assets/svgs/logo_footer.svg" 
+import  Icon  from "../../assets/svgs/logo-footer.svg" 
 
 const Footer = () => {
     return(

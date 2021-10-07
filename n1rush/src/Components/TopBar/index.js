@@ -8,9 +8,9 @@ import closeMenu from "../../assets/svgs/close-menu.svg";
 import search from "../../assets/svgs/search-solid.svg";
 import shopBag from "../../assets/svgs/shopping-bag-solid.svg";
 import paperPlane from "../../assets/svgs/paper-plane.svg";
-import Badge from "../badge";
-import MenuPopUp from "../popUpMenu";
-import React from "react";
+import Badge from "../Badge";
+import popUpMenu from "../popUpMenu";
+
 
 const TopBar = ({ bagTotal }) => {
   const [showMenu, setShowMenu] = useState(false);  
@@ -20,7 +20,7 @@ const TopBar = ({ bagTotal }) => {
       <LeftSide>
         <Menu>
           <img src={showMenu ? closeMenu : icon_hamburguer} alt="menu" onClick={ () => {showMenu ? setShowMenu(false) : setShowMenu(true)} } />
-          <MenuPopUp showMenu={showMenu} />
+          <popUpMenu showMenu={showMenu} />
         </Menu>
         <img className="logo-desktop" src={logo} alt="logo N1" />
         <img className="logo-mobile" src={logoMobile} alt="logo N1 Mobile" />

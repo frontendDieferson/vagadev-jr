@@ -1,7 +1,6 @@
-import React from "react";
 import { Arrow, Container, Content } from "./style";
 
-const Menu = ({ showMenu }) => {
+const PopUpMenu = ({ showMenu }) => {
   return (
     <Container id="menu" show={showMenu ? "block" : "none"}>
       <Arrow />
@@ -32,4 +31,4 @@ const Menu = ({ showMenu }) => {
   );
 };
 
-export default Menu;
+export default PopUpMenu;
