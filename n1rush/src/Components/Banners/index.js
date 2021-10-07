@@ -1,3 +1,4 @@
+import React from 'react';
 import Banner from "./banner";
 import ZeldaBanner from "../../assets/img/zelda_banner.jpg";
 import SekiroBanner from "../../assets/img/sekiro_banner.jpg";

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Label, LeftEdge } from "./style";
 import Line from "../../../assets/svgs/line3.svg"
 

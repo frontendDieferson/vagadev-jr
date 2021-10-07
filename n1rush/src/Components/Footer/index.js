@@ -1,3 +1,4 @@
+import React from 'react';
 import {Container, Left, Right} from './style';
 import  Icon  from "../../assets/svgs/logo_footer.svg" 
 
