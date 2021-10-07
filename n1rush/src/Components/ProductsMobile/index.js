@@ -1,14 +1,16 @@
 import React, {useState} from "react";
 import { Container } from "./style";
-import OutridersBanner from "../../assets/svgs/outriders.svg";
-import DonkeyKongBanner from "../../assets/svgs/donkey.svg";
-import CyberpunkBanner from "../../assets/svgs/cyberpunk.svg";
-import arrowLeft from "../../assets/svgs/angle-left-solid-black.svg";
-import arrowRight from "../../assets/svgs/angle-right-solid-black.svg";
-import Product from "../productList/product"
-import React from "react";
 
-const ProductsMobile = ({ setBagTotal, bagTotal }) => {
+import arrowRight from "../../assets/svgs/angle-right-solid-black.svg";
+import arrowLeft from "../../assets/svgs/angle-left-solid-black.svg";
+import OutridersBanner from "../../assets/svgs/outriders.svg";
+import CyberpunkBanner from "../../assets/svgs/cyberpunk.svg";
+import DonkeyKongBanner from "../../assets/svgs/donkey.svg";
+
+
+import Product from "../ControlProducts"
+
+const ProductsMobile = ({ setTotal, total }) => {
 
   const [pageProduct, setPageProduct] = useState(1);
 
@@ -45,7 +47,7 @@ const ProductsMobile = ({ setBagTotal, bagTotal }) => {
               }}
             />
       </a>
-      <Product  product={products[pageProduct]} setBagTotal={setBagTotal} bagTotal={bagTotal} pageProduct={pageProduct} />
+      <Product  product={products[pageProduct]} setTotal={setTotal} total={total} pageProduct={pageProduct} />
       <a href={`#product-${pageProduct}`}>
         <img
             src={arrowRight}

@@ -1,7 +1,8 @@
 import React from 'react';
-import arrowLeft from "../../../assets/svgs/angle-left-solid.svg";
-import arrowRight from "../../../assets/svgs/angle-right-solid.svg";
-import line from "../../../assets/svgs/line2.svg";
+
+import arrowLeft from "../../assets/svgs/angle-left-solid.svg";
+import arrowRight from "../../assets/svgs/angle-right-solid.svg";
+import line from "../../assets/svgs/line2.svg";
 
 import { Container, Controls, TopSide, BottomSide } from "./style";
 

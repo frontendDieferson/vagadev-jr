@@ -3,6 +3,8 @@ import React from "react";
 import Mario from "../../assets/svgs/mario.svg";
 import { Container, Info, Box } from "./style";
 
+import CloseButton from '../../assets/svgs/close_btn.svg'
+
 const Modal = ({ open, setOpen }) => {
   
   return (

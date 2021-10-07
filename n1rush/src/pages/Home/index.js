@@ -3,12 +3,12 @@ import { Title, Products, App } from "./style";
 
 import HighlightIcon from "../../assets/svgs/highlight-icon.svg";
 import ProductsDesktop from "../../Components/ProductsDesktop";
-import ProductsMobile from "../../components/productsMobile";
+import ProductsMobile from "../../Components/ProductsMobile";
 
 import Carousel from "../../Components/Carousel";
 import Banners from "../../Components/Banners";
 import TopBar from "../../Components/TopBar";
-import Footer from "../../Components/footer";
+import Footer from "../../Components/Footer";
 
 
 const Home = () => {
