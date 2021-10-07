@@ -4,7 +4,7 @@ import line from "../../../assets/svgs/line2.svg";
 
 import { Container, Controls, TopSide, BottomSide } from "./style";
 
-const Control = ({ page, setPage, totalPages, image }) => {
+const ControlCarousel = ({ page, setPage, totalPages, image }) => {
 
   return (
     <Container>
@@ -41,4 +41,4 @@ const Control = ({ page, setPage, totalPages, image }) => {
   );
 };
 
-export default Control;
+export default ControlCarousel;
