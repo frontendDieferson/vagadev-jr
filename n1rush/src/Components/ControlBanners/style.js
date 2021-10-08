@@ -26,8 +26,8 @@ export const Container = styled.div`
 
 export const Label = styled.div`
   width: 100%;
-  max-height: 71px;
-  min-height: 31.64px;
+  max-height: 61px;
+  min-height: 61.64px;
   background-color: #3ec6e0;
   color: #084154;
   font-weight: 700;
@@ -57,7 +57,7 @@ export const Label = styled.div`
 export const LeftEdge = styled.div`
   width: 10px;
   max-height: 61px;
-  min-height: 31.64px;
+  min-height: 61.64px;
   background-color: #084154;
   border-bottom-left-radius: 5px;
   margin-right: 19px;
