@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+    color: #ffffff;
   position: absolute;
   width: 63px;
   height: 384px;
@@ -30,6 +31,7 @@ export const TopSide = styled.div`
   justify-content: space-between;
   background-color: #3ec6e0;
   height: 300px;
+    color: #ffffff;
   h6 {
     margin-top: 80px;
     color: #ffffff;
@@ -68,7 +70,7 @@ export const BottomSide = styled.div`
   align-items: center;
   justify-content: space-evenly;
   color: #ffffff;
-  height: 84px;
+  height: 120px;
   left: 1857px;
   top: 512px;
   h6{
@@ -88,6 +90,7 @@ export const BottomSide = styled.div`
 export const Controls = styled.div`
     display: flex;
     justify-content: space-between;
+    color: #ffffff;
     width: 40px;
     img:hover{
         cursor: pointer;

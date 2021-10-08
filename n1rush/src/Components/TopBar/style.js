@@ -63,6 +63,7 @@ export const Menu = styled.div`
 export const RightSide = styled.div`
   align-items: center;
   display: flex;
+  color: #FFF;
   h6 {
     margin-left: 15px;
     margin-right: 43px;

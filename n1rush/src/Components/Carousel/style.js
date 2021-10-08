@@ -61,7 +61,7 @@ export const Image = styled.div`
 `;
 
 export const Details = styled.div`
-  max-width: 420px;
+  max-width: 460px;
   color: #ffffff;
   text-align: right;
   margin-left: 55%;
@@ -110,8 +110,8 @@ export const Price = styled.div`
     padding: 0;
   }
   small {
-    margin-top: 12px;
-    font-size: 28px;
+    margin-top: 40px;
+    font-size: 40px;
     font-weight: 900;
   }
   @media (max-width: 660px){

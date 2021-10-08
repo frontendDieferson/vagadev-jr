@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 display: block;
     width: 100%;
+    
     margin-top: 80px;
     ul{
         list-style: none;

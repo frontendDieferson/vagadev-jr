@@ -1,3 +1,4 @@
+import React from "react";
 import { Arrow, Container, Content } from "./style";
 
 const PopUpMenu = ({ showMenu }) => {

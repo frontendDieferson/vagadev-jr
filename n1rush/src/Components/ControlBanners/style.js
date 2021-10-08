@@ -26,7 +26,7 @@ export const Container = styled.div`
 
 export const Label = styled.div`
   width: 100%;
-  max-height: 61px;
+  max-height: 71px;
   min-height: 31.64px;
   background-color: #3ec6e0;
   color: #084154;

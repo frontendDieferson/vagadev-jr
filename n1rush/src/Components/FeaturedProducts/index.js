@@ -1,10 +1,11 @@
 import React from 'react';
-import Banner from "../Banners";
+import {Container} from './style';
 import ZeldaBanner from "../../assets/img/zelda_banner.jpg";
 import SekiroBanner from "../../assets/img/sekiro_banner.jpg";
-import {Container} from './style';
 
-const Banners = () => {
+import ControlBanners from '../ControlBanners';
+
+const FeaturedProducts = () => {
   const images = [
     {
       imagePath: ZeldaBanner,
@@ -18,11 +19,16 @@ const Banners = () => {
 
   return (
     <Container>
-      {images.map((image, index) => {
-        return <Banner image={image} key={index} />;
-      })}
+      
+      {images.map((images, index) => (
+        
+          <ControlBanners image={images} key={index} />
+       
+      ))}
+     
+       
     </Container>
   );
 };
 
-export default Banners;
+export default FeaturedProducts;

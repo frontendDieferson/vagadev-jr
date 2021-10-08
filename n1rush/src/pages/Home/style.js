@@ -27,7 +27,7 @@ export const Title = styled.div`
   margin: auto auto auto auto;
   width: 100%;
   img{
-    margin-left: 327px;
+    margin-left: 50px;
     
   }
   h2 {

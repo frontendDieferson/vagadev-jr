@@ -9,7 +9,7 @@ import search from "../../assets/svgs/search-solid.svg";
 import shopBag from "../../assets/svgs/shopping-bag-solid.svg";
 import paperPlane from "../../assets/svgs/paper-plane.svg";
 import Badge from "../Badge";
-import popUpMenu from "../popUpMenu";
+import PopUpMenu from '../PopUpMenu';
 
 
 const TopBar = ({ bagTotal }) => {
@@ -20,13 +20,13 @@ const TopBar = ({ bagTotal }) => {
       <LeftSide>
         <Menu>
           <img src={showMenu ? closeMenu : icon_hamburguer} alt="menu" onClick={ () => {showMenu ? setShowMenu(false) : setShowMenu(true)} } />
-          <popUpMenu showMenu={showMenu} />
+          <PopUpMenu showMenu={showMenu} />
         </Menu>
         <img className="logo-desktop" src={logo} alt="logo N1" />
         <img className="logo-mobile" src={logoMobile} alt="logo N1 Mobile" />
       </LeftSide>
       <RightSide>
-        <img src={paperPlane} alt="paper-plane" />
+        <img src={paperPlane} alt="paper-plane"  />
         <h6> CONTATO </h6>
         <img className="line" src={line} alt="line" />
         <img src={search} alt="search" />

@@ -6,9 +6,9 @@ import ProductsDesktop from "../../Components/ProductsDesktop";
 import ProductsMobile from "../../Components/ProductsMobile";
 
 import Carousel from "../../Components/Carousel";
-import Banners from "../../Components/Banners";
 import TopBar from "../../Components/TopBar";
 import Footer from "../../Components/Footer";
+import FeaturedProducts from "../../Components/FeaturedProducts";
 
 
 const Home = () => {
@@ -19,17 +19,18 @@ const Home = () => {
     
     <App>
       <Carousel />
-      <TopBar total={total}/>
-      <Banners />
-      <Products>
-        <Title>
-          <img src={HighlightIcon} alt="icon" />
-          <h2> Produtos em destaque </h2>
-        </Title>
-        <ProductsDesktop setTotal={setTotal} total={total}/>
-        <ProductsMobile setTotal={setTotal} total={total}/>
-      </Products>     
-      <Footer/> 
+      <FeaturedProducts />
+       <TopBar total={total}/>
+        <Products>
+          <Title>
+            <img src={HighlightIcon} alt="icon" />
+            <h2>Produtos em destaque</h2>
+          </Title>
+          <ProductsDesktop setTotal={setTotal} total={total} />
+          <ProductsMobile setTotal={setTotal} total={total} />
+        </Products>
+        <Footer />
+    
     </App>
   );
 };
